@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{list-style: none;}
+        li:before{content: "\002A"; color: red;}
+    </style>
+</head>
+<body>
+    <div>
+        <h3>개인 구매회원 가입</h3>
+        <hr>
+        <p style="font-size: 11px;">
+        회원 정보를 입력해주세요. 모두 입력하셔야 가입이 가능합니다.</p>
+
+        <form action="11st.co.kr" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <ul><li>이름</li></ul>
+                    </td>
+                    <td>
+                        <input type="text" name="name" size="40"
+                        placeholder="이름을 입력해주세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul><li>ID</li></ul>
+                    </td>
+                    <td>
+                        <input type="text" name="id" size="30" placeholder="ID를 입력해주세요.">
+                        <input type="button" value="중복확인">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul><li>비밀번호</li></ul>
+                    </td>
+                    <td>
+                        <input type="password" name="password" size="25" placeholder="비밀번호를 입력해주세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul><li>비밀번호 확인</li></ul>
+                    </td>
+                    <td>
+                        <input type="password" name="again_password" size="25" placeholder="비밀번호를 다시 한번 입력해주세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul><li>휴대폰</li></ul>
+                    </td>
+                    <td>
+                        <select name="phone">
+                            <option value="skt">SKT</option>
+                            <option value="kt">KT</option>
+                            <option value="lgup">LGU+</option>
+                        </select>
+                        <input type="text" name="telnum" size="25" placeholder="휴대폰 번호 (-제외)">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="option" value="SMS">
+                        이벤트/쇼핑혜택 SMS 수신 동의 <span style="color: red;">(선택)</span>
+                        <br />
+                        <input type="checkbox" name="option" value="email">
+                        이벤트/쇼핑혜택 이메일 수신 동의 <span style="color: red;">(선택)</span>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input type="submit" value="회원가입" style="background: teal; color: white; font-size: 10px; padding: 5px 20px;">
+        </form>
+    </div>
+</body>
+</html>
