@@ -5,80 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul{list-style: none;}
-        li:before{content: "\002A"; color: red;}
+        body{width: 720px; margin-left: 16px; font-family: "Malgun Gothic", Arial, sans-serif;}
+        header{background-color: deepskyblue; padding:2px 16px;}
+        h1{color: white; margin-bottom: 0px;}
+        .author{color: white; font-style: italic; font-size: 10px;}
+        .mainContent{background-color: aliceblue; padding: 4px 16px;}
+        .abstract{font-size: 13px; font-style: italic; color: navy;}
+        h2{color:navy; border-bottom: 4px solid cornflowerblue; margin-bottom: 5px;}
+        footer{background-color: cornflowerblue; padding:1px 16px; color: white; font-size: 12px;}
+        aside{
+            max-width: 240;
+            border-top: thin solid cornflowerblue;
+            border-bottom: thin solid cornflowerblue;
+            font-size: 20px;
+            line-height: 130%;
+            font-style: italic;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            color: navy;
+        }
+        .leftBar{float:left; margin-right: 16px;}
+        .rightBar{float: right; margin-left: 16px;}
     </style>
 </head>
 <body>
-    <div>
-        <h3>개인 구매회원 가입</h3>
-        <hr>
-        <p style="font-size: 11px;">
-        회원 정보를 입력해주세요. 모두 입력하셔야 가입이 가능합니다.</p>
-
-        <form action="11st.co.kr" method="post">
-            <table>
-                <tr>
-                    <td>
-                        <ul><li>이름</li></ul>
-                    </td>
-                    <td>
-                        <input type="text" name="name" size="40"
-                        placeholder="이름을 입력해주세요.">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul><li>ID</li></ul>
-                    </td>
-                    <td>
-                        <input type="text" name="id" size="30" placeholder="ID를 입력해주세요.">
-                        <input type="button" value="중복확인">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul><li>비밀번호</li></ul>
-                    </td>
-                    <td>
-                        <input type="password" name="password" size="25" placeholder="비밀번호를 입력해주세요.">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul><li>비밀번호 확인</li></ul>
-                    </td>
-                    <td>
-                        <input type="password" name="again_password" size="25" placeholder="비밀번호를 다시 한번 입력해주세요.">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul><li>휴대폰</li></ul>
-                    </td>
-                    <td>
-                        <select name="phone">
-                            <option value="skt">SKT</option>
-                            <option value="kt">KT</option>
-                            <option value="lgup">LGU+</option>
-                        </select>
-                        <input type="text" name="telnum" size="25" placeholder="휴대폰 번호 (-제외)">
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="checkbox" name="option" value="SMS">
-                        이벤트/쇼핑혜택 SMS 수신 동의 <span style="color: red;">(선택)</span>
-                        <br />
-                        <input type="checkbox" name="option" value="email">
-                        이벤트/쇼핑혜택 이메일 수신 동의 <span style="color: red;">(선택)</span>
-                    </td>
-                </tr>
-            </table>
-            <hr>
-            <input type="submit" value="회원가입" style="background: teal; color: white; font-size: 10px; padding: 5px 20px;">
-        </form>
-    </div>
+    <article>
+        <header>
+            <h1>HTML5, CSS, and Javascript의 미래</h1>
+            <span class="author">by 체르니</span>
+        </header>
+        <div class="mainContent">
+            <p class="abstract">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, maxime debitis corporis adipisci quam doloremque magnam aut suscipit maiores ad ea veritatis aliquam harum autem libero quos corrupti ab fugit?</p>
+            <section>
+                <h2>HTML5 등장 배경</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste tenetur harum iusto quidem quibusdam voluptatum laudantium, eum, tempore et ipsa amet commodi temporibus ratione corporis cumque nemo quis saepe. Veniam.
+                    Nemo vero ad aut commodi sit cum minus aliquid debitis exercitationem cumque modi, rem ipsam ratione eveniet quae perferendis hic quod nostrum explicabo error velit eaque vitae! Adipisci, repellendus totam.</p>
+                    <aside class="rightBar"> <a href="http://www.royalpalace.go.kr/">
+                        <img src="./gb_logo.png" width="128px"></a></aside>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta quae fugit provident minus id omnis tempore, cupiditate labore quidem commodi eum nulla aliquam, quaerat possimus sunt dignissimos adipisci voluptatibus.</p>
+            </section>
+            <section>
+                <h2>HTML5, CSS, Javascript의 현재와 미래</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde repellat eius hic reprehenderit odit optio nam, quidem iste ea dolor iure beatae officiis sunt incidunt labore, provident eligendi similique.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam natus nam, eum optio perferendis obcaecati fugit sint deleniti rerum quisquam adipisci a repellat eveniet assumenda magni! Sapiente natus cumque voluptatum.</p>
+                <aside class="leftBar">경복궁은 조선 왕조 제일의 법궁으로 1395년...</aside>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia accusamus sunt quisquam quaerat, ex minus iste nostrum, libero dolore aperiam, necessitatibus veritatis esse ad rerum voluptate voluptates itaque dolorem iusto?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, illo corporis. Excepturi quod dolorem incidunt dolor quidem commodi officia voluptates, totam optio nostrum placeat, assumenda quis, animi officiis suscipit consequatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit quisquam mollitia enim hic aspernatur est quaerat ipsum, rerum, perspiciatis molestiae nesciunt omnis id ut sapiente ipsa eum molestias? Sapiente!</p>
+            </section>
+            <section>
+                <h2>결론</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus dignissimos pariatur eligendi eum placeat deserunt voluptatum laborum ipsum aliquid quo sapiente, corporis culpa, aspernatur autem similique, atque distinctio dicta.</p>
+            </section>
+        </div>
+        <footer>기사는 000 잡지에 2022년 4월 5일 수록되었습니다.</footer>
+</article>
 </body>
 </html>
