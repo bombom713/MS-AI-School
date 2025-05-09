@@ -6,4 +6,4 @@ Apr 2023 – Sep 2023, Seoul
  - Research and practice algorithms such as image classification and object detection<br>
  - Acquire data preprocessing and data visualization skills<br>
  - Learn how to use cloud-based AI services (Azure)<br>
-promoted by the Microsoft and KorCham<br>
+ - promoted by the Microsoft and KorCham<br>
